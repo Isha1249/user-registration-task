@@ -41,7 +41,8 @@ GET /user/form
 Response:
   Status: 200 OK
   Content-Type: text/html
-  POST /user/submit
+
+POST /user/submit
 Description: Submits the user registration form data.
 Authorization: Requires an API token in the Authorization header.
 Request Body Payload
