@@ -28,7 +28,7 @@ This project implements a user registration form using Node.js, Express, and Mon
    API_TOKEN=<your-api-token>
    PORT=<port>
    
-# 4.  Usage
+## 4.  Usage
     To start the server, run:
     ```bash
     npm start
@@ -37,15 +37,15 @@ The application will be running at http://localhost:3000.
 
 ## API Endpoints
 GET /user/form
-Description: Returns the HTML form for user registration.
+  Description: Returns the HTML form for user registration.
 Response:
-Status: 200 OK
-Content-Type: text/html
-POST /user/submit
+  Status: 200 OK
+  Content-Type: text/html
+  POST /user/submit
 Description: Submits the user registration form data.
 Authorization: Requires an API token in the Authorization header.
 Request Body Payload
-Content-Type: application/json
+  Content-Type: application/json
 Payload Structure:
 json:
 {
@@ -66,8 +66,8 @@ curl -X POST http://localhost:3000/user/submit \
   "terms": true
 }'
 Response:
-On Success (User saved):
-Status: 200 OK
+  On Success (User saved):
+  Status: 200 OK
 Response Body:
 json
 {
@@ -75,17 +75,16 @@ json
   "result": { ... }
 }
 On Validation Error:
-Status: 400 Bad Request
+  Status: 400 Bad Request
 Response Body:
-Copy code
 {
   "message": "Validation error message here"
 }
-## Validation Rules
-Name: Must be between 3 and 30 characters and contain only alphabets.
-Email: Must be a valid email address.
-Phone: Must be a 10-digit number (only numerical).
-Terms and Conditions: Must be accepted (checked).
+Validation Rules
+  Name: Must be between 3 and 30 characters and contain only alphabets.
+  Email: Must be a valid email address.
+  Phone: Must be a 10-digit number (only numerical).
+  Terms and Conditions: Must be accepted (checked).
 
 Technologies Used
 Node.js
