@@ -28,14 +28,14 @@ This project implements a user registration form using Node.js, Express, and Mon
    API_TOKEN=<your-api-token>
    PORT=<port>
    
-## 4.  Usage
+# 4.  Usage
     To start the server, run:
     ```bash
     npm start
 
 The application will be running at http://localhost:3000.
 
-## API Endpoints
+# API Endpoints
 GET /user/form
   Description: Returns the HTML form for user registration.
 Response:
